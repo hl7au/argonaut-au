@@ -593,7 +593,7 @@
 	"goal-argonaut-profile-spreadsheet.xml",
 	"immunization-argonaut-profile-spreadsheet.xml",
 	"medication-argonaut-profile-spreadsheet.xml",
-	"MedicationRequest-argonaut-profile-spreadsheet.xml",
+	"medicationrequest-argonaut-profile-spreadsheet.xml",
 	"medicationstatement-argonaut-profile-spreadsheet.xml",
 	"observationresults-argonaut-profile-spreadsheet.xml",
 	"patient-argonaut-profile-spreadsheet.xml",
