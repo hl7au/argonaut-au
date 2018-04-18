@@ -1,0 +1,56 @@
+{
+  "resourceType": "Observation",
+  "id": "vitals-panel", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
+
+  "status": "final",
+  "category": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/observation-category",
+        "code": "vital-signs",
+        "display": "Vital Signs"
+      }
+    ],
+    "text": "Vital Signs"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8716-3",
+        "display": "Vital signs"
+      }
+    ],
+    "text": "Vital signs panel (respiratory rate, heart rate, blood pressure)"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+  },
+  "encounter": {
+    "reference": "Encounter/691"
+  },
+  "effectiveDateTime": "1999-07-02",
+  "related": [
+    {
+      "type": "has-member",
+      "target": {
+        "reference": "Observation/respiratory-rate",
+        "display": "Respiratory Rate"
+      }
+    },
+    {
+      "type": "has-member",
+      "target": {
+        "reference": "Observation/heart-rate",
+        "display": "Heart Rate"
+      }
+    },
+    {
+      "type": "has-member",
+      "target": {
+        "reference": "Observation/blood-pressure",
+        "display": "Blood Pressure"
+      }
+    }
+  ]
+}

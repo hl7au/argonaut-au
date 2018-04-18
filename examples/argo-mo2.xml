@@ -1,0 +1,63 @@
+<MedicationRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir fhir-all.xsd" xmlns="http://hl7.org/fhir">
+	<!--this is an example using a contained reference to a medication
+-->
+	<id value="argo-mo2"/>
+	<meta xmlns="http://hl7.org/fhir">
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationrequest"/>
+	</meta>
+	<contained>
+		<Medication>
+			<id value="med2"/>
+			<code>
+				<coding>
+					<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+					<code value="582620"/>
+					<display value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+				</coding>
+				<text value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+			</code>
+		</Medication>
+	</contained>
+	<dateWritten value="2008-04-05"/>
+	<status value="active"/>
+	<patient>
+		<reference value="Patient/peter-chalmers"/>
+		<display value="Peter Chalmers"/>
+	</patient>
+	<prescriber>
+		<reference value="Practitioner/1234"/>
+		<display value="Kathy Fielding, MD"/>
+	</prescriber>
+	<!--  either a code or a reference to the medication being prescribed. As described earlier, this could be contained, separately
+        within a bundle or simply a reference to a remote server. -->
+	<medicationReference>
+		<reference value="#med2"/>
+		<display value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+	</medicationReference>
+	<!--	The following elements are not mandatory for the Argonaut Profile -->
+	<dosageInstruction>
+		<text value="10 mL bid"/>
+		<timing>
+			<repeat>
+				<boundsPeriod>
+					<start value="2008-04-05"/>
+				</boundsPeriod>
+			</repeat>
+		</timing>
+	</dosageInstruction>
+	<dispenseRequest>
+		<numberOfRepeatsAllowed value="1"/>
+		<quantity>
+			<value value="480"/>
+			<unit value="mL"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mL"/>
+		</quantity>
+		<expectedSupplyDuration>
+			<value value="30"/>
+			<unit value="days"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="d"/>
+		</expectedSupplyDuration>
+	</dispenseRequest>
+</MedicationRequest>

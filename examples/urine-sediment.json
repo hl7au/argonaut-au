@@ -1,0 +1,30 @@
+ {
+  "resourceType": "Observation",
+  "id": "urine-sediment", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
+  "status": "final",
+  "category": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/observation-category",
+        "code": "laboratory",
+        "display": "Laboratory"
+      }
+    ],
+    "text": "Laboratory"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11279-7",
+        "display": "Urine sediment comments by Light microscopy Narrative"
+      }
+    ],
+    "text": "COMMENT"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+  },
+  "effectiveDateTime": "2005-07-05",
+  "valueString": "Recommend Urine Culture"
+}

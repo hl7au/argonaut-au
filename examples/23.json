@@ -1,0 +1,38 @@
+{
+   "resourceType":"AllergyIntolerance",
+   "id": "23", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-allergyintolerance"]},
+   "recordedDate":"2000",
+   "patient":{
+      "reference":"Patient/peter-chalmers"
+   },
+   "substance":{
+      "coding":[
+         {
+            "system":"http://rxnav.nlm.nih.gov/REST/Ndfrt",
+            "code":"N0000175503",
+            "display":"sulfonamide antibacterial"
+         }
+      ],
+      "text":"sulfonamide antibacterial"
+   },
+   "status":"confirmed",
+   "criticality":"CRITL",
+   "category":"medication",
+   "reaction":[
+      {
+         "manifestation":[
+            {
+               "coding":[
+                  {
+                     "system":"http://snomed.info/sct",
+                     "code":"271807003",
+                     "display":"skin rash"
+                  }
+               ],
+               "text":"skin rash"
+            }
+         ],
+         "severity":"mild"
+      }
+   ]
+}
