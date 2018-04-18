@@ -3,7 +3,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="argo-profile-link"/>
 
-  <url value="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link"/>
+  <url value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link"/>
   <name value="Profile-resource association extension"/>
   <title value="Profile-Resource  Association"/>
   <status value="draft"/>
@@ -128,7 +128,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link"/>
+      <fixedUri value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link"/>
       <maxLength value="0"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -198,7 +198,7 @@
       <path value="Extension.url"/>
       <sliceName value="Extension:profile-link.url"/>
       <min value="0"/>
-      <fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link"/>
+      <fixedUri value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link"/>
       <maxLength value="0"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>

@@ -3,7 +3,7 @@
   "id": "hc1",
   "meta": {
     "profile": [
-      "http://fhir.org/guides/argonaut/StructureDefinition/argo-condition"
+      "http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-condition"
     ]
   },
   "clinicalStatus": "active",

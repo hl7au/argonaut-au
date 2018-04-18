@@ -10,7 +10,7 @@ The following are example usage scenarios for the DAF Patient profile:
     by identifier.system and may be location specific.
 -   Query for a Patient demographic information using first name, last
     name etc.
--   Query for Patients based on race, ethnicity, gender etc.
+-   Query for Patients based on gender, post code etc.
 -   Query for Patients less than 5 years of age
 -   Query for Patients between ages of 25 and 50
 
@@ -25,17 +25,11 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1. a patient name
 1. a gender
 
-**2015 Edition Certification Requirements ([Must Support]).**
-
-In addition, based upon the 2015 Edition Certification Requirements, the following data-elements must be supported.
-
 '''If the data is present, Patient shall include:'''
 
 1. a birth date
 1. a communication language
-1. a race
-1. an ethnicity
-1. a birth sex
+1. indigenous status
 
 
 **Profile specific implementation guidance:**

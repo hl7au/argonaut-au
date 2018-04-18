@@ -24,27 +24,10 @@ Additionally the following data-elements must be supported. See the Argonaut def
 1.  A date of birth in `Patient.birthDate`
 2.  One or more languages spoken in `Patient.communication.language` which has an [extensible](http://hl7.org/fhir/terminologies.html#rextensible) binding to:
     -    [Common Languages] Note: The extensibility is limited to [All Languages]
-3.  One or more race codes in  `Patient.extension`= [US Core Race Extension] which:
-    - Must include at least one code from [OMB Race Categories]
-    - May include additional race codes from [CDC Race Codes]
-
-4.  One or more ethnicity codes in  `Patient.extension`=[US Core ethnicity Extension] which:
-    - Must include one code from [OMB Ethnicity Categories]
-    - May include additional race codes from [CDC Ethnicity Codes]
-
-5.  One Birth Sex in `Patient.extension`= [US Core Patient Birth Sex] which has an [required](http://hl7.org/fhir/terminologies.html#required) binding to:
-    -   [US Core Birth Sex]
+3.  One indigenous status code in  `Patient.extension`= [Australian Indigenous Status Extension] 
 
 
   [Common Languages]: http://build.fhir.org/ValueSet-languages.html
   [All Languages]: http://build.fhir.org/all-languages.html
-  [US Core Patient Birth Sex]: StructureDefinition-argo-birthsex.html
-  [US Core Birth Sex]: ValueSet-usrealm-birthsex.html
-  [US Core Patient Race]:  StructureDefinition-argo-race.html
-  [OMB Race Categories]: ValueSet-omb-race.html
-  [US Core Race Extension]: StructureDefinition-argo-race.html
-  [CDC Race Codes]:ValueSet-detailed-race.html
- [CDC Ethnicity Codes]: ValueSet-detailed-ethnicity.html
- [US Core ethnicity Extension]: StructureDefinition-argo-ethnicity.html
- [OMB Ethnicity Categories]: ValueSet-omb-ethnicity.html
- [Must Support]: definitions.html#must-support
+  [Australian Indigenous Status Extension]: http://fhir.hl7.org.au/fhir/base2017Sep/StructureDefinition-indigenous-status.html
+  [Must Support]: definitions.html#must-support

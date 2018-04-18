@@ -2,7 +2,7 @@
 <Goal xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="goal-1"/>
 	<meta xmlns="http://hl7.org/fhir">
-		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-goal"/>
+		<profile value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-goal"/>
 	</meta>
 	<status value="in-progress"/>
 	<description>

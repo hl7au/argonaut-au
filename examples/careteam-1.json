@@ -3,7 +3,7 @@
   "id": "careteam-1",
   "meta": {
     "profile": [
-      "http://fhir.org/guides/argonaut/StructureDefinition/argo-careteam"
+      "http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-careteam"
     ]
   },
   "status": "active",

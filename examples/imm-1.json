@@ -3,7 +3,7 @@
   "id": "imm-1",
   "meta": {
     "profile": [
-      "http://fhir.org/guides/argonaut/StructureDefinition/argo-immunization"
+      "http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-immunization"
     ]
   },
   "status": "completed",

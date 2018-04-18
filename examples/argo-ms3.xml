@@ -16,7 +16,7 @@
         <meta>
           <versionId value="213289"/>
           <lastUpdated value="2016-11-28T17:03:26.318+11:00"/>
-          <profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationstatement"/>
+          <profile value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-medicationstatement"/>
         </meta>
         <status value="active"/>
         <medicationReference>

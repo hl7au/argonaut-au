@@ -9,5 +9,5 @@ The Argonaut Project is a joint project of major US EHR vendors to advance indus
 | [Argonaut Provider Directory] | This implementation guide is based upon STU3 FHIR standard and provides the foundation for a robust provider directory for US usage                                                                                            |
 
   [About the Argonaut Project]: http://argonautwiki.hl7.org/index.php?title=Main_Page/Background
-  [Argonaut Data Query Implementation Guide]: http://fhir.org/guides/argonaut/r2/
-  [Argonaut Provider Directory]: http://fhir.org/guides/argonaut/pd/
+  [Argonaut Data Query Implementation Guide]: http://hl7.org.au/fhir/argonaut/r2/
+  [Argonaut Provider Directory]: http://hl7.org.au/fhir/argonaut/pd/

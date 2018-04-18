@@ -3,7 +3,7 @@
   "id": "serum-sodium",
   "meta": {
     "profile": [
-      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+      "http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-observationresults"
     ]
   },
   "status": "final",
