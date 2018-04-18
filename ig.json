@@ -10,6 +10,7 @@
 		"examples"],
 		"txCache": "txCache"
 	},
+  "test" : "test,
   "dependencyList": [ 
     {
        "name" : "aubase",
