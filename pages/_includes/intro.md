@@ -1,10 +1,13 @@
-## Argonaut Data Query Implementation Guide
+## Australian Argonaut Data Query IG
 
- The Argonaut Data Query Implementation Guide is based upon the core **[FHIR STU3 API]** and it documents:
+ The Australian Argonaut Data Query IG is based upon the core **[FHIR STU3 API]** and documents:
 
  - Security and Authorization
  - Data element query of the ONC Common Clinical Data Set
  - Document query of static documents
+
+This Implementation Guide is the Australian Adaptation of the [US argonaut implementation guide](http://www.fhir.org/guides/argonaut/r2/). 
+To see the changes between this implementation guide and the US base, use the "Compare to US argonaut" link at the bottom of each page.
 
 #### Use Cases
 
