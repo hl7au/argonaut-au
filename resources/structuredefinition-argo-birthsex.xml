@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="argo-birthsex"/>
-	<url value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-birthsex"/>
+	<url value="http://fhir.org/guides/argonaut/StructureDefinition/argo-birthsex"/>
 	<name value="Sex of patient assigned at birth"/>
 	<title value="Sex of patient assigned at birth"/>
 	<status value="draft"/>
@@ -125,7 +125,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-birthsex"/>
+			<fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-birthsex"/>
 			<maxLength value="0"/>
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
@@ -158,7 +158,7 @@
 				<strength value="required"/>
 				<description value="Code for sex assigned at birth"/>
 				<valueSetReference>
-					<reference value="http://hl7.org.au/fhir/argonaut/ValueSet/usrealm-birthsex"/>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/usrealm-birthsex"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -195,7 +195,7 @@
 			<path value="Extension.url"/>
 			<sliceName value="Extension:birthsex.url"/>
 			<min value="0"/>
-			<fixedUri value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-birthsex"/>
+			<fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-birthsex"/>
 			<maxLength value="0"/>
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
@@ -216,7 +216,7 @@
 				<strength value="required"/>
 				<description value="Code for sex assigned at birth"/>
 				<valueSetReference>
-					<reference value="http://hl7.org.au/fhir/argonaut/ValueSet/usrealm-birthsex"/>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/usrealm-birthsex"/>
 				</valueSetReference>
 			</binding>
 		</element>

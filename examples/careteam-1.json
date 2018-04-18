@@ -21,5 +21,16 @@
   "subject": {
     "reference": "Patient/peter-chalmers",
     "display": "Peter Chalmers"
-  }
+  },
+  "participant" : [{
+    "role" : {
+      "coding" : [{
+        "system" : "http://nucc.org/provider-taxonomy",
+        "code" : "208D00000X"
+      }]
+    },
+    "member" : {
+      "reference" : "Practitioner/5678"
+    }
+  }]
 }

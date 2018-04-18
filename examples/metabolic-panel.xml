@@ -28,6 +28,11 @@
   </subject>
   <effectiveDateTime value="2005-07-04"/>
   <issued value="2005-07-06T10:45:33.000+10:00"/>
+  <performer>
+    <actor>
+      <reference value="Practitioner/5678"/>
+    </actor>
+  </performer>
   <result>
     <reference value="Observation/serum-total-bilirubin"/>
     <display value="TOTAL BILIRUBIN"/>

@@ -2,7 +2,7 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="argo-resource-documentation"/>
-  <url value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation"/>
+  <url value="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation"/>
   <name value="CapabilityStatement Statement Documentation Extension"/>
   <title value="Resource level Documentation"/>
   <status value="draft"/>
@@ -120,7 +120,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation"/>
+      <fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation"/>
       <maxLength value="0"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -176,7 +176,7 @@
       <path value="Extension.url"/>
       <sliceName value="Extension:resource-documentation.url"/>
       <min value="0"/>
-      <fixedUri value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation"/>
+      <fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation"/>
       <maxLength value="0"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>

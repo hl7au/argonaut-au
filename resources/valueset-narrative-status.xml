@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir valueset-stripped-notext.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="narrative-status"/>
-	<url value="http://hl7.org.au/fhir/argonaut/ValueSet/narrative-status"/>
+	<url value="http://fhir.org/guides/argonaut/ValueSet/narrative-status"/>
 	<name value="Narrative Status"/>
 	<status value="draft"/>
 	<publisher value="Argonaut Project"/>

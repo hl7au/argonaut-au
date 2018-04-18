@@ -4,10 +4,12 @@
 	<meta xmlns="http://hl7.org/fhir">
 		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-goal"/>
 	</meta>
+	<status value="in-progress"/>
+	<description>
+    <text value="Patient is targeting a pulse oximetry of 92% and a weight of 195 lbs"/>
+  </description>
 	<subject>
 		<reference value="Patient/peter-chalmers"/>
 		<display value="Peter Chalmers"/>
 	</subject>
-	<description value="Patient is targeting a pulse oximetry of 92% and a weight of 195 lbs"/>
-	<status value="in-progress"/>
 </Goal>

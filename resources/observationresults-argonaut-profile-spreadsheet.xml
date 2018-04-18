@@ -1067,7 +1067,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
     <Cell ss:StyleID="s81" ss:HRef="http://hl7.org/fhir/StructureDefinition/allergyintolerance-daf"><Data
-      ss:Type="String">http://hl7.org.au/fhir/argonaut/StructureDefinition/ObservationResults</Data></Cell>
+      ss:Type="String">http://fhir.org/guides/argonaut/StructureDefinition/ObservationResults</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s82"><Data ss:Type="String">introduction</Data></Cell>
@@ -1568,7 +1568,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Reference(Patient){http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-patient}</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Reference(Patient){http://fhir.org/guides/argonaut/StructureDefinition/argo-patient}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -8027,7 +8027,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">UCUM Codes for units of measure</Data></Cell>
     <Cell ss:StyleID="s143"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s143"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s163"><Data ss:Type="String">http://hl7.org.au/fhir/argonaut/ValueSet/ucum</Data></Cell>
+    <Cell ss:StyleID="s163"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/ucum</Data></Cell>
     <Cell ss:StyleID="s143"/>
     <Cell ss:StyleID="s143"/>
     <Cell ss:StyleID="s143"/>
@@ -8042,7 +8042,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">SNOMED CT for coded results</Data></Cell>
     <Cell ss:StyleID="s143"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s143"><Data ss:Type="String">preferred</Data></Cell>
-    <Cell ss:StyleID="s163"><Data ss:Type="String">http://hl7.org.au/fhir/argonaut/ValueSet/observation-value-codes</Data></Cell>
+    <Cell ss:StyleID="s163"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/observation-value-codes</Data></Cell>
     <Cell ss:StyleID="s143"/>
     <Cell ss:StyleID="s143"/>
     <Cell ss:StyleID="s143"/>

@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir claim.xsd">
 	<id value="argo-race"/>
-	<url value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-race"/>
+	<url value="http://fhir.org/guides/argonaut/StructureDefinition/argo-race"/>
 	<name value="Argonaut Race Extension"/>
 	<title value="Argonaut Race Extension"/>
 	<status value="draft"/>
@@ -227,7 +227,7 @@
 				<strength value="extensible"/>
 				<description value="The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
 				<valueSetReference>
-					<reference value="http://hl7.org.au/fhir/argonaut/ValueSet/omb-race"/>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/omb-race"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -356,7 +356,7 @@
 				<strength value="required"/>
 				<description value="The [900+ CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes."/>
 				<valueSetReference>
-					<reference value="http://hl7.org.au/fhir/argonaut/ValueSet/detailed-race"/>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/detailed-race"/>
 				</valueSetReference>
 			</binding>
 			<mapping>
@@ -503,7 +503,7 @@
 			<type>
 				<code value="uri"/>
 			</type>
-			<fixedUri value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-race"/>
+			<fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-race"/>
 			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
@@ -697,7 +697,7 @@
 				<strength value="required"/>
 				<description value="The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
 				<valueSetReference>
-					<reference value="http://hl7.org.au/fhir/argonaut/ValueSet/omb-race"/>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/omb-race"/>
 				</valueSetReference>
 			</binding>
 		</element>
@@ -742,7 +742,7 @@
 				<strength value="required"/>
 				<description value="The [900+ CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes."/>
 				<valueSetReference>
-					<reference value="http://hl7.org.au/fhir/argonaut/ValueSet/detailed-race"/>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/detailed-race"/>
 				</valueSetReference>
 			</binding>
 		</element>
@@ -789,7 +789,7 @@
 			<sliceName value="Extension:race.url"/>
 			<min value="1"/>
 			<max value="1"/>
-			<fixedUri value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-race"/>
+			<fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-race"/>
 			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>

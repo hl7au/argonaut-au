@@ -56,6 +56,7 @@
     </div>
   </text>
   <status value="active"/>
+  <intent value="plan"/>
   <category>
     <coding>
       <system value="http://argonaut.hl7.org"/>

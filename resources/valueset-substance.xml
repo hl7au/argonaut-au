@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2016-05-25T16:59:08.25+10:00"/>
 	</meta>
-	<url value="http://hl7.org.au/fhir/argonaut/ValueSet/substance"/>
+	<url value="http://fhir.org/guides/argonaut/ValueSet/substance"/>
 <!--	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:2.16.840.1.113762.1.4.1010.1"/>
@@ -26,9 +26,9 @@
 	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
 	<compose>
 		<include>
-      <valueSet value="http://hl7.org.au/fhir/argonaut/ValueSet/substance-ndfrt"/>
-      <valueSet value="http://hl7.org.au/fhir/argonaut/ValueSet/substance-rxnorm"/>
-      <valueSet value="http://hl7.org.au/fhir/argonaut/ValueSet/substance-sct"/>
+      <valueSet value="http://fhir.org/guides/argonaut/ValueSet/substance-ndfrt"/>
+      <valueSet value="http://fhir.org/guides/argonaut/ValueSet/substance-rxnorm"/>
+      <valueSet value="http://fhir.org/guides/argonaut/ValueSet/substance-sct"/>
 			<system value="http://snomed.info/sct"/>
 			<concept>
 				<code value="160244002"/>

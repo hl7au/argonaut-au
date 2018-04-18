@@ -20,7 +20,7 @@
   "license" : "CC0-1.0",
 	"fixed-business-version": "0.0.1",
 	"tool": "jekyll",
-	"canonicalBase": "http://hl7.org.au/fhir/argonaut",
+	"canonicalBase": "http://fhir.org/guides/argonaut",
 	"defaults": {
 		"Practitioner": {
 			"template-base": "ex.html"

@@ -37,7 +37,7 @@
 			<span>Supported Operations: </span>
 			<span style="font-weight:bold;">MAY</span>
 			<span> Support </span>
-			<a href="http://hl7.org.au/fhir/argonaut/r2/OperationDefinition-docref.html">
+			<a href="http://fhir.org/guides/argonaut/r2/OperationDefinition-docref.html">
 				<span>docref</span>
 			</a>
 			<h4>
@@ -497,7 +497,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-patient.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-patient.html">
 							<span>Argonaut Data Query Patient Profile</span>
 							<br/>
 						</a>
@@ -618,7 +618,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-allergyintolerance.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-allergyintolerance.html">
 							<span>Argonaut Data Query AllergyIntolerance Profile</span>
 							<br/>
 						</a>
@@ -662,11 +662,11 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-careplan.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-careplan.html">
 							<span>Argonaut Data Query CarePlan Profile</span>
 							<br/>
 						</a>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-careteam.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-careteam.html">
 							<span>Argonaut Data Query CareTeam Profile</span>
 							<br/>
 						</a>
@@ -771,7 +771,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-condition.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-condition.html">
 							<span>Argonaut Data Query Condition Profile</span>
 							<br/>
 						</a>
@@ -848,7 +848,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-device.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-device.html">
 							<span>Argonaut Data Query Device Profile</span>
 							<br/>
 						</a>
@@ -892,12 +892,12 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-documentreference.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-documentreference.html">
 							<span>Argonaut Data Query Document Reference Profile</span>
 							<br/>
 						</a>
 						<br/>
-					</p> <h4>Search Criteria for StructureDefinition-argo-documentreference</h4> <ul> <li>To fetch document references, the Server <strong>SHALL</strong> support <strong>either</strong>: <ul> <li>a direct query for DocumentReference resources as described here</li> <li>or the <a href="http://hl7.org.au/fhir/argonaut/r2/OperationDefinition-docref.html">$docref operation</a>&#160;operation</li> </ul> </li> </ul> <p style="padding-left: 60px;">The Client <strong>SHALL</strong> support both methods.</p> <ul> <li>If supporting a direct query, a&#160;server <strong>SHALL</strong>&#160;be capable of returning at least the most recent CCD document references and <strong>MAY</strong> provide most recent references to other document types for a patient using:GET [base]/DocumentReference/$docref?patient=[id]</li> <li>If supporting a direct query, A server <strong>SHOULD</strong>&#160;be capable of returning references to CCD documents and <strong>MAY</strong> provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;type=[type]}{&amp;period=[date]}</li> </ul><p/><span>Search Parameters:</span><table border="1">
+					</p> <h4>Search Criteria for StructureDefinition-argo-documentreference</h4> <ul> <li>To fetch document references, the Server <strong>SHALL</strong> support <strong>either</strong>: <ul> <li>a direct query for DocumentReference resources as described here</li> <li>or the <a href="http://fhir.org/guides/argonaut/r2/OperationDefinition-docref.html">$docref operation</a>&#160;operation</li> </ul> </li> </ul> <p style="padding-left: 60px;">The Client <strong>SHALL</strong> support both methods.</p> <ul> <li>If supporting a direct query, a&#160;server <strong>SHALL</strong>&#160;be capable of returning at least the most recent CCD document references and <strong>MAY</strong> provide most recent references to other document types for a patient using:GET [base]/DocumentReference/$docref?patient=[id]</li> <li>If supporting a direct query, A server <strong>SHOULD</strong>&#160;be capable of returning references to CCD documents and <strong>MAY</strong> provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;type=[type]}{&amp;period=[date]}</li> </ul><p/><span>Search Parameters:</span><table border="1">
 						<thead>
 							<tr>
 								<th style="width:2.71in; ">
@@ -967,7 +967,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-goal.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-goal.html">
 							<span>Argonaut Data Query Goal Profile</span>
 							<br/>
 						</a>
@@ -1028,7 +1028,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-immunization.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-immunization.html">
 							<span>Argonaut Data Query Immunization Profile</span>
 							<br/>
 						</a>
@@ -1072,7 +1072,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-diagnosticreport.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-diagnosticreport.html">
 							<span>Argonaut Data Query DiagnosticReport Profile</span>
 							<br/>
 						</a>
@@ -1177,7 +1177,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-medication.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-medication.html">
 							<span>Argonaut Data Query Medication Profile</span>
 							<br/>
 						</a>
@@ -1212,7 +1212,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-medicationstatement.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-medicationstatement.html">
 							<span>Argonaut Data Query MedicationStatement Profile</span>
 							<br/>
 						</a>
@@ -1259,7 +1259,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-MedicationRequest.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-MedicationRequest.html">
 							<span>Argonaut Data Query MedicationRequest Profile</span>
 							<br/>
 						</a>
@@ -1306,15 +1306,15 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-observationresults.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-observationresults.html">
 							<span>Argonaut Data Query Result Observation Profile</span>
 							<br/>
 						</a>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-vitalsigns.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-vitalsigns.html">
 							<span>Argonaut Data Query Vital Signs Profile</span>
 							<br/>
 						</a>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-smokingstatus.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-smokingstatus.html">
 							<span>Argonaut Data Query Smoking Status Observation Profile</span>
 							<br/>
 						</a>
@@ -1419,7 +1419,7 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
-						<a href="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-procedure.html">
+						<a href="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-procedure.html">
 							<span>Argonaut Data Query Procedure Profile</span>
 							<br/>
 						</a>
@@ -1480,7 +1480,7 @@
 		</div>
 	</text>
 
-	<url value="http://hl7.org.au/fhir/argonaut/CapabilityStatement/server"/>
+	<url value="http://fhir.org/guides/argonaut/CapabilityStatement/server"/>
 	<name value="Argonaut Data Query Implementation Guide Server"/>
 	<status value="draft"/>
 	<publisher value="Argonaut Project"/>
@@ -1498,122 +1498,122 @@
 	<format value="xml"/>
 	<format value="json"/>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="AllergyIntolerance"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-allergyintolerance.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-allergyintolerance.html"/>
 		<display value="Argonaut Data Query AllergyIntolerance Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="CarePlan"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-careplan.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-careplan.html"/>
 		<display value="Argonaut Data Query CarePlan Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="CarePlan"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-careteam.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-careteam.html"/>
 		<display value="Argonaut Data Query CareTeam Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Condition"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-condition.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-condition.html"/>
 		<display value="Argonaut Data Query Condition Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="DocumentReference"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-documentreference.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-documentreference.html"/>
 		<display value="Argonaut Data Query Document Reference Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Device"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-device.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-device.html"/>
 		<display value="Argonaut Data Query Device Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Goal"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-goal.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-goal.html"/>
 		<display value="Argonaut Data Query Goal Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Immunization"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-immunization.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-immunization.html"/>
 		<display value="Argonaut Data Query Immunization Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="DiagnosticReport"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-diagnosticreport.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-diagnosticreport.html"/>
 		<display value="Argonaut Data Query DiagnosticReport Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Observation"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-observationresults.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-observationresults.html"/>
 		<display value="Argonaut Data Query Result Observation Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Medication"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-medication.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-medication.html"/>
 		<display value="Argonaut Data Query Medication Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="MedicationRequest"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-MedicationRequest.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-MedicationRequest.html"/>
 		<display value="Argonaut Data Query MedicationRequest Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="MedicationStatement"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-medicationstatement.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-medicationstatement.html"/>
 		<display value="Argonaut Data Query MedicationStatement Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Observation"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-vitalsigns.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-vitalsigns.html"/>
 		<display value="Argonaut Data Query Vital Signs Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Observation"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-smokingstatus.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-smokingstatus.html"/>
 		<display value="Argonaut Data Query Smoking Status Observation Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Patient"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-patient.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-patient.html"/>
 		<display value="Argonaut Data Query Patient Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-profile-link">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Procedure"/>
 		</extension>
-		<reference value="http://hl7.org.au/fhir/argonaut/r2/StructureDefinition-argo-procedure.html"/>
+		<reference value="http://fhir.org/guides/argonaut/r2/StructureDefinition-argo-procedure.html"/>
 		<display value="Argonaut Data Query Procedure Profile"/>
 	</profile>
 	<rest>
@@ -1623,7 +1623,7 @@
 			<description value="&lt;p&gt;&lt;strong&gt;Argonaut Data Query Servers SHALL&lt;/strong&gt;&lt;/p&gt;   &lt;ol&gt;   &lt;li&gt;implement the &lt;a href=&quot;index.html#security&quot;&gt;security requirements&lt;/a&gt; documented in this guide&lt;/li&gt;   &lt;li&gt;A server has ensured that every API request includes a valid Authorization token, supplied via: &lt;code&gt;Authorization: Bearer {server-specific-token-here}&lt;/code&gt;&lt;/li&gt;   &lt;li&gt;A server has rejected any unauthorized requests by returning an &lt;code&gt;HTTP 401&lt;/code&gt; Unauthorized response code.&lt;/li&gt;   &lt;/ol&gt;"/>
 		</security>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-patient&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a patient using GET [base]/Patient/[id].&lt;/li&gt; &lt;li&gt;A server returns valid FHIR Patient resources according to the Data Access Framework (DAF) Patient Profile..&lt;/li&gt; &lt;li&gt;A server has exposed a FHIR Patient search endpoint supporting at a minimum the following search parameters: &lt;ul&gt; &lt;li&gt;identifier&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt; &lt;li&gt;A server has exposed a FHIR Patient search endpoint supporting at a minimum the following search parameters when at least 2 (example name and gender) are present: &lt;ul&gt; &lt;li&gt;name&lt;/li&gt; &lt;li&gt;gender&lt;/li&gt; &lt;li&gt;birthdate&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt; &lt;/ul&gt;   "/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -1737,7 +1737,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-allergyintolerance&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a patient’s allergies using GET /AllergyIntolerance?patient=[id].&lt;/li&gt; &lt;/ul&gt; "/>
 			</extension>
 			<type value="AllergyIntolerance"/>
@@ -1779,7 +1779,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-careplan&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a patient’s Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;date=[date].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable returning all of a patient’s active Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;status=active.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable returning a patient’s active Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;status=active&amp;amp;date=[date].&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;       &lt;h4 id=&quot;summary-of-argonaut-search-criteria-for-structuredefinition-argo-careteam&quot;&gt;Summary of Argonaut Search Criteria for StructureDefinition-argo-careteam&lt;/h4&gt;      &lt;ul&gt;      &lt;li&gt;A server is capable of returning a patients current care team members using GET[base]/CarePlan?patient=[id]&amp;amp;category=careteam&amp;amp;status=active&lt;/li&gt;      &lt;/ul&gt;"/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -1890,7 +1890,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-condition&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;A server is capable of returning a patient’s conditions list using GET/Condition?patient=[id].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable returning all of a patient’s active problems and health concerns using ‘GET /Condition?patient=[id]&amp;amp;clinicalstatus=active,recurrance,remission’&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable returning all of a patient’s problems or all of patient’s health concerns using ‘GET /Condition?patient=[id]&amp;amp;category=[problem|health-concern]’&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;     "/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -1964,7 +1964,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-device&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all Unique device identifier(s)(UDI) for a patient’s implanted device(s) using GET /Device?patient=[id].&lt;/li&gt; &lt;/ul&gt;    "/>
 			</extension>
 			<type value="Device"/>
@@ -2006,7 +2006,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value=" &lt;h4&gt;Search Criteria for StructureDefinition-argo-documentreference&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;To fetch document references, the Server &lt;strong&gt;SHALL&lt;/strong&gt; support &lt;strong&gt;either&lt;/strong&gt;: &lt;ul&gt; &lt;li&gt;a direct query for DocumentReference resources as described here&lt;/li&gt; &lt;li&gt;or the &lt;a href=&quot;OperationDefinition-docref.html&quot;&gt;$docref operation&lt;/a&gt;&amp;nbsp;operation&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p style=&quot;padding-left: 60px;&quot;&gt;The Client &lt;strong&gt;SHALL&lt;/strong&gt; support both methods.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;If supporting a direct query, a&amp;nbsp;server &lt;strong&gt;SHALL&lt;/strong&gt;&amp;nbsp;be capable of returning at least the most recent CCD document references and &lt;strong&gt;MAY&lt;/strong&gt; provide most recent references to other document types for a patient using:GET [base]/DocumentReference/$docref?patient=[id]&lt;/li&gt; &lt;li&gt;If supporting a direct query, A server &lt;strong&gt;SHOULD&lt;/strong&gt;&amp;nbsp;be capable of returning references to CCD documents and &lt;strong&gt;MAY&lt;/strong&gt; provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;amp;type=[type]}{&amp;amp;period=[date]}&lt;/li&gt; &lt;/ul&gt;"/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2076,7 +2076,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-device&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s goals using GET [base]/Goal?patient=[id].&lt;/li&gt; &lt;li&gt;A server is capable of returning all of all of a patient’s goals over a specified time period using GET [base]/Goal?patient=[id]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt;     "/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2135,7 +2135,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-immunization&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched all immunizations for a patient using GET /Immunization?patient=[id].&lt;/li&gt; &lt;/ul&gt;     "/>
 			</extension>
 			<type value="Immunization"/>
@@ -2177,7 +2177,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-diagnosticreport&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s laboratory diagnostic reports queried by category using GET [base]/DiagnosticReport?patient=[id]&amp;amp;category=LAB.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient’s laboratory diagnostic reports queried by category code and date range using GET [base]/DiagnosticReport?patient=[id]&amp;amp;category=LAB&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server is capable of returning all of a patient’s laboratory diagnostic reports queried by category and code using GET [base]/DiagnosticReport?patient=[id]&amp;amp;category=LAB&amp;amp;code=[LOINC].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning all of a patient’s laboratory diagnostic reports queried by category and one or more codes and date range using GET [base]/DiagnosticReport?patient=[id]&amp;amp;category=LAB&amp;amp;code=[LOINC1{,LOINC2,LOINC3,…}]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;     "/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2288,7 +2288,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;The MedicationStatement and MedicationRequest resources can represent a medication, using either a code or refer to a Medication resource. If the Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria &lt;strong&gt;SHALL&lt;/strong&gt; be supported.&lt;/p&gt;"/>
 			</extension>
 			<type value="Medication"/>
@@ -2322,7 +2322,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-medicationstatement&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;The MedicationStatement and MedicationRequest resources can represent a medication, using either a code or refer to a Medication resource. When referencing a Medication resource, the resource may be &lt;a href=&quot;http://hl7.org/fhir/2017Jan/references.html#contained&quot;&gt;contained&lt;/a&gt; or an external resource. The server application can choose any one way or more than one method, but &lt;strong&gt;IF&lt;/strong&gt; the an external reference to Medication is used, the server &lt;strong&gt;SHALL&lt;/strong&gt; support the &lt;a href=&quot;http://hl7.org/fhir/2017Jan/references.html#include&quot;&gt;include&lt;/a&gt; parameter for searching this element. The client application must support both methods.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a patient’s medications using one of or both&lt;/li&gt; &lt;/ul&gt; &lt;ol&gt; &lt;li&gt;GET /MedicationStatement?patient=[id]&lt;/li&gt; &lt;li&gt;GET /MedicationStatement?patient=[id]&amp;amp;_include=MedicationStatement:medication&lt;/li&gt; &lt;/ol&gt; "/>
 			</extension>
 			<type value="MedicationStatement"/>
@@ -2369,7 +2369,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-MedicationRequest&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;The MedicationStatement and MedicationRequest resources can represent a medication, using either a code or refer to a Medication resource. When referencing a Medication resource, the resource may be &lt;a href=&quot;http://hl7.org/fhir/2017Jan/references.html#contained&quot;&gt;contained&lt;/a&gt; or an external resource. The server application can choose any one way or more than one method, but if the an external reference to Medication is used, the server SHALL support the &lt;a href=&quot;http://hl7.org/fhir/2017Jan/references.html#include&quot;&gt;include&lt;/a&gt; parameter for searching this element. The client application must support both methods.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a patient’s medications using one of or both&lt;/li&gt; &lt;/ul&gt; &lt;ol&gt; &lt;li&gt;GET /MedicationRequest?patient=[id]&lt;/li&gt; &lt;li&gt;GET /MedicationRequest?patient=[id]&amp;amp;_include=MedicationRequest:medication&lt;/li&gt; &lt;/ol&gt; "/>
 			</extension>
 			<type value="MedicationRequest"/>
@@ -2416,7 +2416,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value=". &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-observationresults&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category code and date range usingGET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category and code using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC].&lt;/li&gt; &lt;li&gt;A server SHOULD be capable of returning all of a patient&amp;rsquo;s laboratory results queried by category and one or more codes and date range using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC1{,LOINC2,LOINC3,&amp;hellip;}]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-smokingstatus&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a a patient’s smoking status using GET [base]/Observation?patient=[id]&amp;amp;code=72166-2&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-vitalsigns&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s vital signs that it supports using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient’s vital signs queried by date range using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server is capable of returning any of a patient’s vital signs queried by one or more of the codes listed below using GET [base]/Observation?patient=[id]&amp;amp;code[vital sign LOINC{,LOINC2,LOINC3,…}].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning any of a patient’s vital signs queried by one or more of the codes listed below and date range using GET [base]/Observation?patient=[id]&amp;amp;code=[LOINC{,LOINC2…}]vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;     "/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2527,7 +2527,7 @@
 			</searchParam>
 		</resource>
 		<resource>
-			<extension url="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-resource-documentation">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value=" &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-procedure&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a patient’s procedures using GET/Procedure?patient=[id].&lt;/li&gt; &lt;li&gt;A server is capable of returning all of all of a patient’s procedures over a specified time period using GET /Procedure?patient=[id]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt;   "/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2591,7 +2591,7 @@
 			</extension>
 			<name value="docref"/>
 			<definition>
-				<reference value="http://hl7.org.au/fhir/argonaut/OperationDefinition/docref"/>
+				<reference value="http://fhir.org/guides/argonaut/OperationDefinition/docref"/>
 				<display value="Argonaut Get DocumentReferences"/>
 			</definition>
 		</operation>
