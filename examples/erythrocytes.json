@@ -1,60 +1,71 @@
- {
-   "resourceType": "Observation",
-   "id": "erythrocytes", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-   "status": "final",
-   "category": {
-     "coding": [
-       {
-         "system": "http://hl7.org/fhir/observation-category",
-         "code": "laboratory",
-         "display": "Laboratory"
-       }
-     ],
-     "text": "Laboratory"
-   },
-   "code": {
-     "coding": [
-       {
-         "system": "http://loinc.org",
-         "code": "789-8",
-         "display": "RBC # Bld Auto"
-       }
-     ],
-     "text": "RBC # Bld Auto"
-   },
-   "subject": {
-     "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
-   },
-   "effectiveDateTime": "2005-07-05",
-   "valueQuantity": {
-     "value": 4.58,
-     "unit": "10*6/uL",
-     "system": "http://unitsofmeasure.org"
-   },
-   "referenceRange": [
-     {
-       "low": {
-         "value": 4.1,
-         "unit": "10*6/uL",
-         "system": "http://unitsofmeasure.org",
-         "code": "10*6/uL"
-       },
-       "high": {
-         "value": 6.1,
-         "unit": "10*6/uL",
-         "system": "http://unitsofmeasure.org",
-         "code": "10*6/uL"
-       },
-       "meaning": {
-         "coding": [
-           {
-             "system": "http://hl7.org/fhir/referencerange-meaning",
-             "code": "normal",
-             "display": "Normal Range"
-           }
-         ],
-         "text": "Normal Range"
-       }
-     }
-   ]
+{
+  "resourceType": "Observation",
+  "id": "erythrocytes",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "789-8",
+        "display": "RBC # Bld Auto",
+        "userSelected": false
+      }
+    ],
+    "text": "RBC # Bld Auto"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
+  },
+  "effectiveDateTime": "2005-07-05",
+  "valueQuantity": {
+    "value": 4.58,
+    "unit": "10*6/uL",
+    "system": "http://unitsofmeasure.org"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 4.1,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      },
+      "high": {
+        "value": 6.1,
+        "unit": "10*6/uL",
+        "system": "http://unitsofmeasure.org",
+        "code": "10*6/uL"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range",
+            "userSelected": false
+          }
+        ],
+        "text": "Normal Range"
+      }
+    }
+  ]
 }

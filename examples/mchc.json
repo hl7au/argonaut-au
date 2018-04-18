@@ -1,60 +1,71 @@
 {
-   "resourceType": "Observation",
-   "id": "mchc", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-   "status": "final",
-   "category": {
-     "coding": [
-       {
-         "system": "http://hl7.org/fhir/observation-category",
-         "code": "laboratory",
-         "display": "Laboratory"
-       }
-     ],
-     "text": "Laboratory"
-   },
-   "code": {
-     "coding": [
-       {
-         "system": "http://loinc.org",
-         "code": "786-4",
-         "display": "MCHC RBC Auto-mCnc"
-       }
-     ],
-     "text": "MCHC RBC Auto-mCnc"
-   },
-   "subject": {
-     "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
-   },
-   "effectiveDateTime": "2005-07-05",
-   "valueQuantity": {
-     "value": 34.7,
-     "unit": "g/dL",
-     "system": "http://unitsofmeasure.org"
-   },
-   "referenceRange": [
-     {
-       "low": {
-         "value": 30.0,
-         "unit": "g/dL",
-         "system": "http://unitsofmeasure.org",
-         "code": "g/dL"
-       },
-       "high": {
-         "value": 34.0,
-         "unit": "g/dL",
-         "system": "http://unitsofmeasure.org",
-         "code": "g/dL"
-       },
-       "meaning": {
-         "coding": [
-           {
-             "system": "http://hl7.org/fhir/referencerange-meaning",
-             "code": "normal",
-             "display": "Normal Range"
-           }
-         ],
-         "text": "Normal Range"
-       }
-     }
-   ]
+  "resourceType": "Observation",
+  "id": "mchc",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "786-4",
+        "display": "MCHC RBC Auto-mCnc",
+        "userSelected": false
+      }
+    ],
+    "text": "MCHC RBC Auto-mCnc"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
+  },
+  "effectiveDateTime": "2005-07-05",
+  "valueQuantity": {
+    "value": 34.7,
+    "unit": "g/dL",
+    "system": "http://unitsofmeasure.org"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 30.0,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      },
+      "high": {
+        "value": 34.0,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range",
+            "userSelected": false
+          }
+        ],
+        "text": "Normal Range"
+      }
+    }
+  ]
 }

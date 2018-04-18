@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <Medication xmlns="http://hl7.org/fhir">
-	<id value="argo-med2"/>
-	<meta>
-		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medication"/>
-	</meta>
-	<code>
-		<coding>
-			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-			<code value="582620"/>
-			<display value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
-		</coding>
-		<text value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
-	</code>
+  <id value="argo-med2"/>
+  <meta>
+    <profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medication"/>
+  </meta>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="582620"/>
+      <display value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+      <userSelected value="false"/>
+    </coding>
+    <text value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
+  </code>
+  <isBrand value="false"/>
 </Medication>

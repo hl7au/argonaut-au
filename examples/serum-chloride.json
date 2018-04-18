@@ -1,60 +1,71 @@
 {
-   "resourceType": "Observation",
-   "id": "serum-chloride", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-   "status": "final",
-   "category": {
-     "coding": [
-       {
-         "system": "http://hl7.org/fhir/observation-category",
-         "code": "laboratory",
-         "display": "Laboratory"
-       }
-     ],
-     "text": "Laboratory"
-   },
-   "code": {
-     "coding": [
-       {
-         "system": "http://loinc.org",
-         "code": "2075-0",
-         "display": "Chloride SerPl-sCnc"
-       }
-     ],
-     "text": "Chloride SerPl-sCnc"
-   },
-   "subject": {
-     "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
-   },
-   "effectiveDateTime": "2005-07-05",
-   "valueQuantity": {
-     "value": 105.0,
-     "unit": "mmol/L",
-     "system": "http://unitsofmeasure.org"
-   },
-   "referenceRange": [
-     {
-       "low": {
-         "value": 95.0,
-         "unit": "mmol/L",
-         "system": "http://unitsofmeasure.org",
-         "code": "mmol/L"
-       },
-       "high": {
-         "value": 105.0,
-         "unit": "mmol/L",
-         "system": "http://unitsofmeasure.org",
-         "code": "mmol/L"
-       },
-       "meaning": {
-         "coding": [
-           {
-             "system": "http://hl7.org/fhir/referencerange-meaning",
-             "code": "normal",
-             "display": "Normal Range"
-           }
-         ],
-         "text": "Normal Range"
-       }
-     }
-   ]
+  "resourceType": "Observation",
+  "id": "serum-chloride",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2075-0",
+        "display": "Chloride SerPl-sCnc",
+        "userSelected": false
+      }
+    ],
+    "text": "Chloride SerPl-sCnc"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
+  },
+  "effectiveDateTime": "2005-07-05",
+  "valueQuantity": {
+    "value": 105.0,
+    "unit": "mmol/L",
+    "system": "http://unitsofmeasure.org"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 95.0,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      },
+      "high": {
+        "value": 105.0,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range",
+            "userSelected": false
+          }
+        ],
+        "text": "Normal Range"
+      }
+    }
+  ]
 }

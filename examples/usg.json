@@ -1,29 +1,39 @@
 {
   "resourceType": "Observation",
-  "id": "usg", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-  "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "laboratory",
-        "display": "Laboratory"
-      }
-    ],
-    "text": "Laboratory"
+  "id": "usg",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
   },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "5811-5",
-        "display": "Specific gravity of Urine by Test strip"
+        "display": "Specific gravity of Urine by Test strip",
+        "userSelected": false
       }
     ],
     "text": "SPEC GRAV"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
   },
   "effectiveDateTime": "2005-07-05",
   "valueQuantity": {

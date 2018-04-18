@@ -1,74 +1,87 @@
 {
-   "resourceType":"Observation",
-   "id": "bp-data-absent", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
-   "status":"final",
-   "category":{
-      "coding":[
-         {
-            "system":"http://hl7.org/fhir/observation-category",
-            "code":"vital-signs",
-            "display":"Vital Signs"
-         }
+  "resourceType": "Observation",
+  "id": "bp-data-absent",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        }
       ],
-      "text":"Vital Signs"
-   },
-   "code":{
-      "coding":[
-         {
-            "system":"http://loinc.org",
-            "code":"55284-4",
-            "display":"Blood pressure systolic and diastolic"
-         }
-      ],
-      "text":"Blood pressure systolic and diastolic"
-   },
-   "subject":{
-      "reference":"Patient/peter-chalmers","display": "Peter Chalmers"
-   },
-   "encounter":{
-      "reference":"Encounter/691"
-   },
-   "effectiveDateTime":"1999-07-02",
-   "component":[
+      "text": "Vital Signs"
+    }
+  ],
+  "code": {
+    "coding": [
       {
-         "code":{
-            "coding":[
-               {
-                  "system":"http://loinc.org",
-                  "code":"8480-6",
-                  "display":"Systolic blood pressure"
-               }
-            ],
-            "text":"Systolic blood pressure"
-         },
-         "valueQuantity":{
-            "value":109,
-            "unit":"mmHg",
-            "system":"http://unitsofmeasure.org",
-            "code":"mm[Hg]"
-         }
-      },
-      {
-         "code":{
-            "coding":[
-               {
-                  "system":"http://loinc.org",
-                  "code":"8462-4",
-                  "display":"Diastolic blood pressure"
-               }
-            ],
-            "text":"Diastolic blood pressure"
-         },
-         "dataAbsentReason":{
-            "coding":[
-               {
-                  "system":"http://hl7.org/fhir/data-absent-reason",
-                  "code":"unknown",
-                  "display":"Unknown"
-               }
-            ],
-            "text":"Unknown"
-         }
+        "system": "http://loinc.org",
+        "code": "55284-4",
+        "display": "Blood pressure systolic and diastolic",
+        "userSelected": false
       }
-   ]
+    ],
+    "text": "Blood pressure systolic and diastolic"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
+  },
+  "context": {
+    "reference": "Encounter/691"
+  },
+  "effectiveDateTime": "1999-07-02",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8480-6",
+            "display": "Systolic blood pressure",
+            "userSelected": false
+          }
+        ],
+        "text": "Systolic blood pressure"
+      },
+      "valueQuantity": {
+        "value": 109,
+        "unit": "mmHg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mm[Hg]"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8462-4",
+            "display": "Diastolic blood pressure",
+            "userSelected": false
+          }
+        ],
+        "text": "Diastolic blood pressure"
+      },
+      "dataAbsentReason": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/data-absent-reason",
+            "code": "unknown",
+            "display": "Unknown",
+            "userSelected": false
+          }
+        ],
+        "text": "Unknown"
+      }
+    }
+  ]
 }

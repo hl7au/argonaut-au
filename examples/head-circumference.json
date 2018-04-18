@@ -1,24 +1,32 @@
 {
   "resourceType": "Observation",
-  "id": "head-circumference", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
-
-  "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "vital-signs",
-        "display": "Vital Signs"
-      }
-    ],
-    "text": "Vital Signs"
+  "id": "head-circumference",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"
+    ]
   },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "8287-5",
-        "display": "head_circumference"
+        "display": "head_circumference",
+        "userSelected": false
       }
     ],
     "text": "head_circumference"
@@ -26,7 +34,7 @@
   "subject": {
     "reference": "Patient/peter-chalmers"
   },
-  "encounter": {
+  "context": {
     "reference": "Encounter/691"
   },
   "effectiveDateTime": "2010-08-12",

@@ -3,7 +3,7 @@
 -->
 	<id value="argo-mo1"/>
 	<meta xmlns="http://hl7.org/fhir">
-		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationrequest"/>
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-MedicationRequest"/>
 	</meta>
 	<dateWritten value="2008-04-05"/>
 	<status value="active"/>

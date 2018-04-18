@@ -1,29 +1,39 @@
 {
   "resourceType": "Observation",
-  "id": "urine-nitrite", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-  "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "laboratory",
-        "display": "Laboratory"
-      }
-    ],
-    "text": "Laboratory"
+  "id": "urine-nitrite",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
   },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "5802-4",
-        "display": "Nitrite [Presence] in Urine by Test strip"
+        "display": "Nitrite [Presence] in Urine by Test strip",
+        "userSelected": false
       }
     ],
     "text": "NITRITE"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
   },
   "effectiveDateTime": "2005-07-05",
   "valueCodeableConcept": {
@@ -31,7 +41,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "10828004",
-        "display": "Positive"
+        "display": "Positive",
+        "userSelected": false
       }
     ],
     "text": "Positive"

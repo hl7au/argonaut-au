@@ -10,7 +10,7 @@
 		"examples"],
 		"txCache": "txCache"
 	},
-  "test" : "test,
+  "test" : "test",
   "dependencyList": [ 
     {
        "name" : "aubase",
@@ -237,9 +237,9 @@
 			"source": "argo-mo1.xml",
 			"base": "MedicationRequest-argo-mo1.html"
 		},
-		"StructureDefinition/argo-medicationrequest": {
-			"defns": "StructureDefinition-argo-medicationrequest-definitions.html",
-			"base": "StructureDefinition-argo-medicationrequest.html"
+		"StructureDefinition/argo-MedicationRequest": {
+			"defns": "StructureDefinition-argo-MedicationRequest-definitions.html",
+			"base": "StructureDefinition-argo-MedicationRequest.html"
 		},
 		"Observation/head-circumference": {
 			"source": "head-circumference.json",
@@ -593,7 +593,7 @@
 	"goal-argonaut-profile-spreadsheet.xml",
 	"immunization-argonaut-profile-spreadsheet.xml",
 	"medication-argonaut-profile-spreadsheet.xml",
-	"medicationrequest-argonaut-profile-spreadsheet.xml",
+	"MedicationRequest-argonaut-profile-spreadsheet.xml",
 	"medicationstatement-argonaut-profile-spreadsheet.xml",
 	"observationresults-argonaut-profile-spreadsheet.xml",
 	"patient-argonaut-profile-spreadsheet.xml",

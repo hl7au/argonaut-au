@@ -1,31 +1,41 @@
 {
   "resourceType": "Observation",
-  "id": "blood-pressure", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
-  "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "vital-signs",
-        "display": "Vital Signs"
-      }
-    ],
-    "text": "Vital Signs"
+  "id": "blood-pressure",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"
+    ]
   },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "55284-4",
-        "display": "Blood pressure systolic and diastolic"
+        "display": "Blood pressure systolic and diastolic",
+        "userSelected": false
       }
     ],
     "text": "Blood pressure systolic and diastolic"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
   },
-  "encounter": {
+  "context": {
     "reference": "Encounter/691"
   },
   "effectiveDateTime": "1999-07-02",
@@ -36,7 +46,8 @@
           {
             "system": "http://loinc.org",
             "code": "8480-6",
-            "display": "Systolic blood pressure"
+            "display": "Systolic blood pressure",
+            "userSelected": false
           }
         ],
         "text": "Systolic blood pressure"
@@ -54,7 +65,8 @@
           {
             "system": "http://loinc.org",
             "code": "8462-4",
-            "display": "Diastolic blood pressure"
+            "display": "Diastolic blood pressure",
+            "userSelected": false
           }
         ],
         "text": "Diastolic blood pressure"

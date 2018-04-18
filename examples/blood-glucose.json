@@ -1,29 +1,39 @@
 {
   "resourceType": "Observation",
-  "id": "blood-glucose", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-  "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "laboratory",
-        "display": "Laboratory"
-      }
-    ],
-    "text": "Laboratory"
+  "id": "blood-glucose",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
   },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "2339-0",
-        "display": "Glucose Bld-mCnc"
+        "display": "Glucose Bld-mCnc",
+        "userSelected": false
       }
     ],
     "text": "Glucose Bld-mCnc"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
   },
   "effectiveDateTime": "2005-07-05",
   "valueQuantity": {
@@ -45,12 +55,13 @@
         "system": "http://unitsofmeasure.org",
         "code": "mg/dL"
       },
-      "meaning": {
+      "type": {
         "coding": [
           {
             "system": "http://hl7.org/fhir/referencerange-meaning",
             "code": "normal",
-            "display": "Normal Range"
+            "display": "Normal Range",
+            "userSelected": false
           }
         ],
         "text": "Normal Range"

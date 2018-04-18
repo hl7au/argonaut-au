@@ -1,61 +1,71 @@
- {
-   "resourceType": "Observation",
-   "id": "bun", 
-   "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-   "status": "final",
-   "category": {
-     "coding": [
-       {
-         "system": "http://hl7.org/fhir/observation-category",
-         "code": "laboratory",
-         "display": "Laboratory"
-       }
-     ],
-     "text": "Laboratory"
-   },
-   "code": {
-     "coding": [
-       {
-         "system": "http://loinc.org",
-         "code": "3094-0",
-         "display": "BUN SerPl-mCnc"
-       }
-     ],
-     "text": "BUN SerPl-mCnc"
-   },
-   "subject": {
-     "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
-   },
-   "effectiveDateTime": "2005-07-05",
-   "valueQuantity": {
-     "value": 10.0,
-     "unit": "mg/dL",
-     "system": "http://unitsofmeasure.org"
-   },
-   "referenceRange": [
-     {
-       "low": {
-         "value": 5.0,
-         "unit": "mg/dL",
-         "system": "http://unitsofmeasure.org",
-         "code": "mg/dL"
-       },
-       "high": {
-         "value": 20.0,
-         "unit": "mg/dL",
-         "system": "http://unitsofmeasure.org",
-         "code": "mg/dL"
-       },
-       "meaning": {
-         "coding": [
-           {
-             "system": "http://hl7.org/fhir/referencerange-meaning",
-             "code": "normal",
-             "display": "Normal Range"
-           }
-         ],
-         "text": "Normal Range"
-       }
-     }
-   ]
+{
+  "resourceType": "Observation",
+  "id": "bun",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "3094-0",
+        "display": "BUN SerPl-mCnc",
+        "userSelected": false
+      }
+    ],
+    "text": "BUN SerPl-mCnc"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
+  },
+  "effectiveDateTime": "2005-07-05",
+  "valueQuantity": {
+    "value": 10.0,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 5.0,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "high": {
+        "value": 20.0,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/referencerange-meaning",
+            "code": "normal",
+            "display": "Normal Range",
+            "userSelected": false
+          }
+        ],
+        "text": "Normal Range"
+      }
+    }
+  ]
 }

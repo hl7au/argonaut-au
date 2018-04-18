@@ -1,29 +1,39 @@
 {
   "resourceType": "Observation",
-  "id": "urine-leukocyte-esterase", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-  "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "laboratory",
-        "display": "Laboratory"
-      }
-    ],
-    "text": "Laboratory"
+  "id": "urine-leukocyte-esterase",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
   },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "5799-2",
-        "display": "Leukocyte esterase [Presence] in Urine by Test strip"
+        "display": "Leukocyte esterase [Presence] in Urine by Test strip",
+        "userSelected": false
       }
     ],
     "text": "LEUK ESTERASE"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
   },
   "effectiveDateTime": "2005-07-05",
   "valueCodeableConcept": {
@@ -31,7 +41,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "260348001",
-        "display": "++"
+        "display": "++",
+        "userSelected": false
       }
     ],
     "text": "2+"

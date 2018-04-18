@@ -1,38 +1,48 @@
 {
-	"resourceType": "Observation",
-	"id": "oxygen-saturation", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
-	"status": "final",
-	"category": {
-		"coding": [
-			{
-				"system": "http://hl7.org/fhir/observation-category",
-				"code": "vital-signs",
-				"display": "Vital Signs"
-			}
-		],
-		"text": "Vital Signs"
-	},
-	"code": {
-		"coding": [
-			{
-				"system": "http://loinc.org",
-				"code": "59408-5",
-				"display": "Oxygen saturation in Arterial blood by Pulse oximetry "
-			}
-		],
-		"text": "oxygen_saturation"
-	},
-	"subject": {
-		"reference": "Patient/peter-chalmers","display": "Peter Chalmers"
-	},
-	"encounter": {
-		"reference": "Encounter/691"
-	},
-	"effectiveDateTime": "1999-07-02",
-	"valueQuantity": {
-		"value": 99.0,
-		"unit": "%O2",
-		"system": "http://unitsofmeasure.org",
-		"code": "%"
-	}
+  "resourceType": "Observation",
+  "id": "oxygen-saturation",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "59408-5",
+        "display": "Oxygen saturation in Arterial blood by Pulse oximetry ",
+        "userSelected": false
+      }
+    ],
+    "text": "oxygen_saturation"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
+  },
+  "context": {
+    "reference": "Encounter/691"
+  },
+  "effectiveDateTime": "1999-07-02",
+  "valueQuantity": {
+    "value": 99.0,
+    "unit": "%O2",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  }
 }

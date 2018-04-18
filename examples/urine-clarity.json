@@ -1,29 +1,39 @@
 {
   "resourceType": "Observation",
-  "id": "urine-clarity", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
-  "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "laboratory",
-        "display": "Laboratory"
-      }
-    ],
-    "text": "Laboratory"
+  "id": "urine-clarity",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"
+    ]
   },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory",
+          "display": "Laboratory",
+          "userSelected": false
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "32167-9",
-        "display": "Clarity of Urine"
+        "display": "Clarity of Urine",
+        "userSelected": false
       }
     ],
     "text": "APPEARANCE"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
   },
   "effectiveDateTime": "2005-07-05",
   "valueCodeableConcept": {
@@ -31,7 +41,8 @@
       {
         "system": "http://snomed.info/sct",
         "code": "81858005",
-        "display": "Cloudy"
+        "display": "Cloudy",
+        "userSelected": false
       }
     ],
     "text": "Hazy"

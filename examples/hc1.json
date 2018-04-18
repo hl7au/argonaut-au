@@ -1,25 +1,32 @@
 {
   "resourceType": "Condition",
-  "id": "hc1", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-condition"]},
-
-  "patient": {
-    "reference": "Patient/peter-chalmers",
-    "display":"Peter Chalmers"
-  },
-  "code": {
-    "text": "Cost of medications"
-  },
-  "category": {
-    "coding": [
-      {
-        "system": "http://argonaut.hl7.org",
-        "code": "additional-concern",
-        "display": "Health Concern"
-      }
-    ],
-    "text": "Health Concern"
+  "id": "hc1",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-condition"
+    ]
   },
   "clinicalStatus": "active",
   "verificationStatus": "confirmed",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://argonaut.hl7.org",
+          "code": "additional-concern",
+          "display": "Health Concern",
+          "userSelected": false
+        }
+      ],
+      "text": "Health Concern"
+    }
+  ],
+  "code": {
+    "text": "Cost of medications"
+  },
+  "subject": {
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
+  },
   "onsetDateTime": "2007-12-14"
 }

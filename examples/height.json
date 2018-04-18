@@ -1,33 +1,41 @@
 {
   "resourceType": "Observation",
-  "id": "height", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
-
-
-  "status": "final",
-  "category": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/observation-category",
-        "code": "vital-signs",
-        "display": "Vital Signs"
-      }
-    ],
-    "text": "Vital Signs"
+  "id": "height",
+  "meta": {
+    "profile": [
+      "http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"
+    ]
   },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs",
+          "userSelected": false
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "8302-2",
-        "display": "height"
+        "display": "height",
+        "userSelected": false
       }
     ],
     "text": "height"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers",
+    "display": "Peter Chalmers"
   },
-  "encounter": {
+  "context": {
     "reference": "Encounter/691"
   },
   "effectiveDateTime": "1999-07-02",

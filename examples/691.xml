@@ -1,8 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <Encounter xmlns="http://hl7.org/fhir">
   <id value="691"/>
   <status value="in-progress"/>
-  <class value="inpatient"/>
-  <patient>
+  <class>
+    <system value="http://hl7.org/fhir/v3/ActCode"/>
+    <code value="IMP"/>
+  </class>
+  <subject>
     <reference value="Patient/peter-chalmers"/>
-  </patient>
+  </subject>
 </Encounter>
