@@ -31,6 +31,7 @@
           <reference value="Patient/peter-chalmers"/>
           <display value="Peter Chalmers"/>
         </subject>
+        <taken value="y"/>
       </MedicationStatement>
     </resource>
     <search>

@@ -1,11 +1,11 @@
 {
    "resourceType":"AllergyIntolerance",
    "id": "23", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-allergyintolerance"]},
-   "recordedDate":"2000",
+   "assertedDate":"2000",
    "patient":{
       "reference":"Patient/peter-chalmers"
    },
-   "substance":{
+   "code":{
       "coding":[
          {
             "system":"http://rxnav.nlm.nih.gov/REST/Ndfrt",
@@ -15,8 +15,9 @@
       ],
       "text":"sulfonamide antibacterial"
    },
-   "status":"confirmed",
-   "criticality":"CRITL",
+   "clinicalStatus" : "active",
+   "verificationStatus" : "confirmed",
+   "criticality":"low",
    "category":"medication",
    "reaction":[
       {

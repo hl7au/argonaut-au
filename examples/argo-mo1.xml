@@ -5,16 +5,8 @@
 	<meta xmlns="http://hl7.org/fhir">
 		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-MedicationRequest"/>
 	</meta>
-	<dateWritten value="2008-04-05"/>
 	<status value="active"/>
-	<patient>
-		<reference value="Patient/peter-chalmers"/>
-		<display value="Peter Chalmers"/>
-	</patient>
-	<prescriber>
-		<reference value="Practitioner/1234"/>
-		<display value="Kathy Fielding, MD"/>
-	</prescriber>
+  <intent value="order"/>
 	<!--  either a code or a reference to the medication being prescribed. As described earlier, this could be contained, separately
         within a bundle or simply a reference to a remote server. -->
 	<medicationCodeableConcept>
@@ -25,6 +17,17 @@
 		</coding>
 		<text value="Nizatidine 15 MG/ML Oral Solution [Axid]"/>
 	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/peter-chalmers"/>
+		<display value="Peter Chalmers"/>
+	</subject>
+	<authoredOn value="2008-04-05"/>
+	<requester>
+    <agent>
+      <reference value="Practitioner/1234"/>
+      <display value="Kathy Fielding, MD"/>
+    </agent>
+  </requester>
 	<!--	The following elements are not mandatory for the Argonaut Profile -->
 	<dosageInstruction>
 		<text value="10 mL bid"/>

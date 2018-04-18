@@ -1,5 +1,5 @@
 {
-  "resourceType": "CarePlan",
+  "resourceType": "CareTeam",
   "id": "careteam-1",
   "meta": {
     "profile": [
