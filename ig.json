@@ -17,7 +17,7 @@
        "location" : "http://build.fhir.org/ig/hl7au/au-fhir-base"
     }
   ], 
-  "license" : "CC0-1.0",
+    "license" : "CC0-1.0",
 	"fixed-business-version": "0.0.1",
 	"tool": "jekyll",
 	"canonicalBase": "http://hl7.org.au/fhir/argonaut",
