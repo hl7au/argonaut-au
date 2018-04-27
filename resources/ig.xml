@@ -7,6 +7,7 @@
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="FHIR Project"/>
+   <fhirVersion value="3.0.1"/>
   <package>
     <name value="base"/>
     <resource>
@@ -351,6 +352,12 @@
         <reference value="Observation/blood-glucose"/>
       </sourceReference>
     </resource>
+      <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Practitioner/1234"/>
+      </sourceReference>
+    </resource>
     <resource>
       <example value="true"/>
       <sourceReference>
@@ -403,12 +410,6 @@
       <example value="true"/>
       <sourceReference>
         <reference value="Encounter/691"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="true"/>
-      <sourceReference>
-        <reference value="Practitioner/1234"/>
       </sourceReference>
     </resource>
     <resource>
@@ -491,11 +492,6 @@
     <resource>
       <sourceReference>
         <reference value="ValueSet/observation-value-codes"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="ValueSet/observation-ccdavitalsignresult"/>
       </sourceReference>
     </resource>
     <resource>
@@ -598,6 +594,12 @@
     <resource>
       <sourceReference>
         <reference value="ConceptMap/ndc-cvx"/>
+      </sourceReference>
+    </resource>
+     <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-patient"/>
       </sourceReference>
     </resource>
   </package>

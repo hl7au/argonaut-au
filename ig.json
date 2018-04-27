@@ -92,6 +92,14 @@
 	"extraTemplates": ["mappings"],
 	"source": "ig.xml",
 	"resources": {
+		"Practitioner/1234": {
+			"source": "5678.xml",
+			"base": "Practitioner-1234.html"
+		},
+		"Practitioner/5678": {
+			"source": "1234.xml",
+			"base": "Practitioner-5678.html"
+		},
 		"DocumentReference/episode-summary": {
 			"source": "episode-summary.xml",
 			"base": "DocumentReference-episode-summary.html"
@@ -322,10 +330,6 @@
 			"source": "urine-color.json",
 			"base": "Observation-urine-color.html"
 		},
-		"Practitioner/5678": {
-			"source": "1234.xml",
-			"base": "Practitioner-5678.html"
-		},
 		"StructureDefinition/argo-condition": {
 			"defns": "StructureDefinition-argo-condition-definitions.html",
 			"base": "StructureDefinition-argo-condition.html"
@@ -381,10 +385,6 @@
 		"ValueSet/device-kind": {
 			"source": "valueset-device-kind.xml",
 			"base": "ValueSet-device-kind.html"
-		},
-		"Practitioner/1234": {
-			"source": "5678.xml",
-			"base": "Practitioner-1234.html"
 		},
 		"ConceptMap/ndc-cvx": {
 			"source": "conceptmap-ndc-cvx.xml",
@@ -596,7 +596,6 @@
 	"medicationrequest-argonaut-profile-spreadsheet.xml",
 	"medicationstatement-argonaut-profile-spreadsheet.xml",
 	"observationresults-argonaut-profile-spreadsheet.xml",
-	"patient-argonaut-profile-spreadsheet.xml",
 	"procedure-argonaut-profile-spreadsheet.xml",
 	"smokingstatus-argonaut-profile-spreadsheet.xml",
 	"vitalsigns-argonaut-profile-spreadsheet.xml"]
