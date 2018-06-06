@@ -431,21 +431,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="ValueSet/usrealm-birthsex"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="ValueSet/ucum"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="ValueSet/ucum-vitals-common"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="ValueSet/substance"/>
       </sourceReference>
     </resource>
@@ -477,16 +462,6 @@
     <resource>
       <sourceReference>
         <reference value="ValueSet/procedure-icd10pcs"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="ValueSet/omb-race"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="ValueSet/omb-ethnicity"/>
       </sourceReference>
     </resource>
     <resource>
@@ -526,16 +501,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="ValueSet/detailed-race"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="ValueSet/detailed-ethnicity"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="ValueSet/condition-category"/>
       </sourceReference>
     </resource>
@@ -546,32 +511,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/argo-race"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="StructureDefinition/argo-profile-link"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/argo-ethnicity"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/argo-birthsex"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="SearchParameter/race"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="SearchParameter/ethnicity"/>
       </sourceReference>
     </resource>
     <resource>
@@ -591,15 +531,16 @@
         <reference value="CapabilityStatement/client"/>
       </sourceReference>
     </resource>
-    <resource>
+     <resource>
+      <example value="false"/>
       <sourceReference>
-        <reference value="ConceptMap/ndc-cvx"/>
+        <reference value="StructureDefinition/argo-patient"/>
       </sourceReference>
     </resource>
      <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/argo-patient"/>
+        <reference value="StructureDefinition/argo-allergyintolerance"/>
       </sourceReference>
     </resource>
   </package>

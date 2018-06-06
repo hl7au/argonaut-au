@@ -10,11 +10,13 @@
 		"examples"],
 		"txCache": "txCache"
 	},
-  "test" : "test",
-  "dependencyList": [ 
+	"npm-name" : "hl7.fhir.au.pd",
+    "test" : "test",
+    "dependencyList": [ 
     {
        "name" : "aubase",
-       "location" : "http://build.fhir.org/ig/hl7au/au-fhir-base"
+       "location" : "http://hl7.org.au/fhir",
+	   "version" : "current"
     }
   ], 
     "license" : "CC0-1.0",
@@ -180,14 +182,6 @@
 			"source": "valueset-procedure-icd10pcs.xml",
 			"base": "ValueSet-procedure-icd10pcs.html"
 		},
-		"ValueSet/usrealm-birthsex": {
-			"source": "valueset-usrealm-birthsex.xml",
-			"base": "ValueSet-usrealm-birthsex.html"
-		},
-		"ValueSet/omb-ethnicity": {
-			"source": "valueset-omb-ethnicity.xml",
-			"base": "ValueSet-omb-ethnicity.html"
-		},
 		"Observation/erythrocytes": {
 			"source": "erythrocytes.json",
 			"base": "Observation-erythrocytes.html"
@@ -211,11 +205,6 @@
 		"StructureDefinition/argo-careteam": {
 			"defns": "StructureDefinition-argo-careteam-definitions.html",
 			"base": "StructureDefinition-argo-careteam.html"
-		},
-		"StructureDefinition/argo-ethnicity": {
-			"defns": "StructureDefinition-argo-ethnicity-definitions.html",
-			"source": "structuredefinition-argo-ethnicity.xml",
-			"base": "StructureDefinition-argo-ethnicity.html"
 		},
 		"Observation/vitals-panel": {
 			"source": "vitals-panel.json",
@@ -459,11 +448,6 @@
 			"defns": "StructureDefinition-argo-documentreference-definitions.html",
 			"base": "StructureDefinition-argo-documentreference.html"
 		},
-		"StructureDefinition/argo-birthsex": {
-			"defns": "StructureDefinition-argo-birthsex-definitions.html",
-			"source": "structuredefinition-argo-birthsex.xml",
-			"base": "StructureDefinition-argo-birthsex.html"
-		},
 		"ValueSet/substance-sct": {
 			"source": "valueset-substance-sct.xml",
 			"base": "ValueSet-substance-sct.html"
@@ -583,7 +567,7 @@
 		}
 	},
 	"version": "3.0.1",
-	"spreadsheets": ["allergyintolerance-argonaut-profile-spreadsheet.xml",
+	"spreadsheets": [
 	"careplan-argonaut-profile-spreadsheet.xml",
 	"careteam-argonaut-profile-spreadsheet.xml",
 	"condition-argonaut-profile-spreadsheet.xml",
