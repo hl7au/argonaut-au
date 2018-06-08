@@ -537,13 +537,19 @@
         <reference value="StructureDefinition/argo-patient"/>
       </sourceReference>
     </resource>
-     <resource>
+    <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/argo-allergyintolerance"/>
       </sourceReference>
     </resource>
-  </package>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-immunization"/>
+      </sourceReference>
+    </resource>
+	</package>
   <page>
     <source value="index.html"/>
     <title value="Argonaut Data Query Homepage"/>

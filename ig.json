@@ -10,7 +10,7 @@
 		"examples"],
 		"txCache": "txCache"
 	},
-	"npm-name" : "hl7.fhir.au.pd",
+	"npm-name" : "hl7.fhir.au.argonaut",
     "test" : "test",
     "dependencyList": [ 
     {
@@ -575,7 +575,6 @@
 	"diagnosticreport-argonaut-profile-spreadsheet.xml",
 	"documentreference-argonaut-profile-spreadsheet.xml",
 	"goal-argonaut-profile-spreadsheet.xml",
-	"immunization-argonaut-profile-spreadsheet.xml",
 	"medication-argonaut-profile-spreadsheet.xml",
 	"medicationrequest-argonaut-profile-spreadsheet.xml",
 	"medicationstatement-argonaut-profile-spreadsheet.xml",
