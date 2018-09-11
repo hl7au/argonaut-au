@@ -1,0 +1,116 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://argonaut.hl7.org",
+  "code" : "problem"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://argonaut.hl7.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://argonaut.hl7.org",
+  "code" : "additional-concern"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://argonaut.hl7.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://argonaut.hl7.org",
+  "code" : "careteam"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://argonaut.hl7.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://argonaut.hl7.org",
+      "concept" : [{
+        "code" : "problem",
+        "display" : "Problem"
+      },
+      {
+        "code" : "health-concern",
+        "display" : "Health Concern"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://argonaut.hl7.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://argonaut.hl7.org",
+    "code" : "problem",
+    "display" : "Problem"
+  }],
+  "text" : "Problem"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/condition-category"
+    },
+    {
+      "system" : "http://argonaut.hl7.org",
+      "concept" : [{
+        "code" : "problem",
+        "display" : "Problem"
+      },
+      {
+        "code" : "health-concern",
+        "display" : "Health Concern"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://hl7.org/fhir/condition-category"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://argonaut.hl7.org",
+    "code" : "additional-concern",
+    "display" : "Health Concern"
+  }],
+  "text" : "Health Concern"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/condition-category"
+    },
+    {
+      "system" : "http://argonaut.hl7.org",
+      "concept" : [{
+        "code" : "problem",
+        "display" : "Problem"
+      },
+      {
+        "code" : "health-concern",
+        "display" : "Health Concern"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://hl7.org/fhir/condition-category"
+}
+-------------------------------------------------------------------------------------

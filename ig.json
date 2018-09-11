@@ -13,14 +13,14 @@
 	"npm-name" : "hl7.fhir.au.argonaut",
     "test" : "test",
     "dependencyList": [ 
-    {
-       "name" : "aubase",
-       "location" : "http://hl7.org.au/fhir",
-	   "version" : "current"
-    }
-  ], 
+		{
+		   "name" : "aubase",
+		   "location" : "http://hl7.org.au/fhir",
+		   "version" : "current"
+		}
+    ], 
     "license" : "CC0-1.0",
-	"fixed-business-version": "0.0.1",
+	"fixed-business-version": "0.9.0",
 	"tool": "jekyll",
 	"canonicalBase": "http://hl7.org.au/fhir/argonaut",
 	"defaults": {
