@@ -569,6 +569,12 @@
         <reference value="StructureDefinition/argo-device"/>
       </sourceReference>
     </resource>
+	<resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-condition"/>
+      </sourceReference>
+    </resource>
 	</package>
   <page>
     <source value="index.html"/>
