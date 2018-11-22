@@ -11,7 +11,8 @@
 	</identifier>
 -->	
     <version value="1.6.0"/>
-	<name value="Argonaut Substance-Reactant for Intolerance and Negation Codes"/>
+	<title value="Argonaut Substance-Reactant for Intolerance and Negation Codes"/>
+	<name value="ArgonautSubstanceReactantforIntoleranceandNegationCodes"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<publisher value="Argonaut Project"/>
@@ -26,9 +27,7 @@
 	<copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
 	<compose>
 		<include>
-      <valueSet value="http://hl7.org.au/fhir/argonaut/ValueSet/substance-ndfrt"/>
-      <valueSet value="http://hl7.org.au/fhir/argonaut/ValueSet/substance-rxnorm"/>
-      <valueSet value="http://hl7.org.au/fhir/argonaut/ValueSet/substance-sct"/>
+        <valueSet value="http://hl7.org.au/fhir/argonaut/ValueSet/substance-sct"/>
 			<system value="http://snomed.info/sct"/>
 			<concept>
 				<code value="160244002"/>
