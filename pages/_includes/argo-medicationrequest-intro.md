@@ -38,7 +38,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 - [MedicationRequest-argo-mo2](MedicationRequest-argo-mo2.html) This example uses a references a contained Medication resource.
 - [MedicationRequest-argo-mo3](Bundle-argo-mo3.html) This example is a search [Bundle] with a MedicationRequest and an included Medication resource in the Bundle.
 
-  [Medication Clinical Drug (RxNorm)]: ValueSet-medication-codes.html
+ 
   [MedicationRequestStatus]: http://hl7.org/fhir/us/daf/ValueSet-medication-order-status.html
 [MedicationStatementStatus]: http://hl7.org/fhir/us/daf/ValueSet-medication-statement-status.html
 [MedicationStatement]:http://hl7.org/fhir/medicationstatement.html
