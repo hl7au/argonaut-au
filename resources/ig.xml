@@ -483,11 +483,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="ValueSet/medication-codes"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="ValueSet/languages"/>
       </sourceReference>
     </resource>
