@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="argo-vitalsigns"/>
+  <text>
+    <status value="generated" />
+  </text>
+  <url value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-vitalsigns"/>
+  <version value="0.0.1"/>
+  <name value="Argonaut Vital Signs Observation Profile"/>
+  <status value="draft"/>
+  <date value="2018-11-22T00:00:00+11:00"/>
+  <publisher value="Argonaut Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://argonautwiki.hl7.org"/>
+    </telecom>
+  </contact>
+  <fhirVersion value="3.0.1"/>
+  <mapping>
+    <identity value="us-core-stu3"/>
+    <uri value="http://unknown.org/US Core STU3"/>
+    <name value="US Core STU3"/>
+  </mapping>
+  <mapping>
+    <identity value="workflow"/>
+    <uri value="http://hl7.org/fhir/workflow"/>
+    <name value="Workflow Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="sct-concept"/>
+    <uri value="http://snomed.info/conceptdomain"/>
+    <name value="SNOMED CT Concept Domain Binding"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="w5"/>
+    <uri value="http://hl7.org/fhir/w5"/>
+    <name value="W5 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="sct-attr"/>
+    <uri value="http://snomed.info/sct"/>
+    <name value="SNOMED CT Attribute Binding"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Observation"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Observation">
+      <path value="Observation"/>
+      <short value="Argonaut Vital Signs Observation Profile"/>
+      <alias value="Vital Signs"/>
+      <alias value="Measurement"/>
+      <alias value="Results"/>
+      <alias value="Tests"/>
+      <constraint>
+        <key value="arg-2"/>
+        <severity value="error"/>
+        <human value="If there is no component or related element then either a value[x] or a data absent reason must be present"/>
+        <expression value="(component.empty() and related.empty()) implies (dataAbsentReason or value)"/>
+        <xpath value="exists(f:component) or exists(f:related) or exists(f:*[starts-with(local-name(.), &#39;value&#39;)]) or exists(f:dataAbsentReason)"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation"/>
+      </mapping>
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-status"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.status"/>
+      </mapping>
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="vital-signs"/>
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.category"/>
+      </mapping>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code"/>
+      <short value="Coded Responses from C-CDA Vital Sign Results"/>
+      <requirements value="5. SHALL contain exactly one [1..1] code, where the @code SHOULD be selected from ValueSet HITSP Vital Sign Result Type 2.16.840.1.113883.3.88.12.80.62 DYNAMIC (CONF:7301)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <description value="This identifies the vital sign result type."/>
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/argonaut/ValueSet/observation-ccdavitalsignresult"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.code"/>
+      </mapping>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-patient"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.subject"/>
+      </mapping>
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]"/>
+      <short value="Often just a dateTime for Vital Signs"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+      <constraint>
+        <key value="arg-1"/>
+        <severity value="error"/>
+        <human value="Datetime must be at least to day."/>
+        <expression value="($this as dateTime).toString().length() &gt;= 8"/>
+        <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.effective[x]"/>
+      </mapping>
+    </element>
+    <element id="Observation.valueQuantity">
+      <path value="Observation.valueQuantity"/>
+      <short value="Vital Sign Value recorded with UCUM"/>
+      <requirements value="9. SHALL contain exactly one [1..1] value with @xsi:type=&quot;PQ&quot; (CONF:7305)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <description value="Common UCUM units for recording Vital Signs"/>
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/argonaut/ValueSet/ucum-vitals-common"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.valueQuantity"/>
+      </mapping>
+    </element>
+    <element id="Observation.valueQuantity.value">
+      <path value="Observation.valueQuantity.value"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.valueQuantity.value"/>
+      </mapping>
+    </element>
+    <element id="Observation.valueQuantity.unit">
+      <path value="Observation.valueQuantity.unit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.valueQuantity.unit"/>
+      </mapping>
+    </element>
+    <element id="Observation.valueQuantity.system">
+      <path value="Observation.valueQuantity.system"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.valueQuantity.system"/>
+      </mapping>
+    </element>
+    <element id="Observation.valueQuantity.code">
+      <path value="Observation.valueQuantity.code"/>
+      <short value="Coded responses from the common UCUM units for vital signs value set."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.valueQuantity.code"/>
+      </mapping>
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.dataAbsentReason"/>
+      </mapping>
+    </element>
+    <element id="Observation.related">
+      <path value="Observation.related"/>
+      <short value="Used when reporting systolic and diastolic blood pressure."/>
+      <min value="0"/>
+      <max value="*"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.related"/>
+      </mapping>
+    </element>
+    <element id="Observation.related.type">
+      <path value="Observation.related.type"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="has-member"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.related.type"/>
+      </mapping>
+    </element>
+    <element id="Observation.related.target">
+      <path value="Observation.related.target"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-vitalsigns"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.related.target"/>
+      </mapping>
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component"/>
+      <short value="Used when reporting systolic and diastolic blood pressure."/>
+      <min value="0"/>
+      <max value="*"/>
+      <constraint>
+        <key value="arg-3"/>
+        <severity value="error"/>
+        <human value="If there is no a value a data absent reason must be present"/>
+        <expression value="value.exists() or dataAbsentReason.exists()"/>
+        <xpath value="exists(f:*[starts-with(local-name(.), &#39;value&#39;)]) or exists(f:dataAbsentReason)"/>
+      </constraint>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.component"/>
+      </mapping>
+    </element>
+    <element id="Observation.component.code">
+      <path value="Observation.component.code"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <description value="This identifies the vital sign result type."/>
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/argonaut/ValueSet/observation-ccdavitalsignresult"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.component.code"/>
+      </mapping>
+    </element>
+    <element id="Observation.component.valueQuantity">
+      <path value="Observation.component.valueQuantity"/>
+      <short value="Vital Sign Value recorded with UCUM"/>
+      <requirements value="9. SHALL contain exactly one [1..1] value with @xsi:type=&quot;PQ&quot; (CONF:7305)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <description value="Common UCUM units for recording Vital Signs"/>
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/argonaut/ValueSet/ucum-vitals-common"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.component.valueQuantity"/>
+      </mapping>
+    </element>
+    <element id="Observation.component.valueQuantity.value">
+      <path value="Observation.component.valueQuantity.value"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.component.valueQuantity.value"/>
+      </mapping>
+    </element>
+    <element id="Observation.component.valueQuantity.unit">
+      <path value="Observation.component.valueQuantity.unit"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.component.valueQuantity.unit"/>
+      </mapping>
+    </element>
+    <element id="Observation.component.valueQuantity.system">
+      <path value="Observation.component.valueQuantity.system"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.component.valueQuantity.system"/>
+      </mapping>
+    </element>
+    <element id="Observation.component.valueQuantity.code">
+      <path value="Observation.component.valueQuantity.code"/>
+      <short value="Coded responses from the common UCUM units for vital signs value set."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.component.valueQuantity.code"/>
+      </mapping>
+    </element>
+    <element id="Observation.component.dataAbsentReason">
+      <path value="Observation.component.dataAbsentReason"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="Observation.component.dataAbsentReason"/>
+      </mapping>
+    </element>
+  </differential>
+</StructureDefinition>

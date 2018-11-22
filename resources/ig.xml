@@ -575,6 +575,12 @@
         <reference value="StructureDefinition/argo-condition"/>
       </sourceReference>
     </resource>
+	<resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-vitalsigns"/>
+      </sourceReference>
+    </resource>
 	</package>
   <page>
     <source value="index.html"/>
