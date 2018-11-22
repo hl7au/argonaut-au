@@ -551,6 +551,18 @@
         <reference value="StructureDefinition/argo-immunization"/>
       </sourceReference>
     </resource>
+	<resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-medicationstatement"/>
+      </sourceReference>
+    </resource>
+	<resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/argo-medicationrequest"/>
+      </sourceReference>
+    </resource>
 	</package>
   <page>
     <source value="index.html"/>

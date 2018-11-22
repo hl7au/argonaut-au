@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="argo-medicationrequest"/>
+  <text>
+    <status value="generated" />
+  </text>
+  <url value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-medicationrequest"/>
+  <version value="0.0.1"/>
+  <name value="Argonaut MedicationRequest Profile"/>
+  <status value="draft"/>
+  <date value="2018-11-22T00:00:00+11:00"/>
+  <publisher value="Argonaut Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://argonautwiki.hl7.org"/>
+    </telecom>
+  </contact>
+  <fhirVersion value="3.0.1"/>
+  <mapping>
+    <identity value="us-core-stu3"/>
+    <uri value="http://unknown.org/US Core STU3"/>
+    <name value="US Core STU3"/>
+  </mapping>
+  <mapping>
+    <identity value="workflow"/>
+    <uri value="http://hl7.org/fhir/workflow"/>
+    <name value="Workflow Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="script10.6"/>
+    <uri value="http://ncpdp.org/SCRIPT10_6"/>
+    <name value="Mapping to NCPDP SCRIPT 10.6"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="w5"/>
+    <uri value="http://hl7.org/fhir/w5"/>
+    <name value="W5 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="MedicationRequest"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="MedicationRequest">
+      <path value="MedicationRequest"/>
+      <short value="Argonaut MedicationRequest Profile"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="MedicationRequest"/>
+      </mapping>
+    </element>
+    <element id="MedicationRequest.status">
+      <path value="MedicationRequest.status"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <description value="A code specifying the state of the prescribing event. Describes the lifecycle of the prescription."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/medication-order-status"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="MedicationRequest.status"/>
+      </mapping>
+    </element>
+    <element id="MedicationRequest.medication[x]">
+      <path value="MedicationRequest.medication[x]"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-medication"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+        <description value="Prescribable medications"/>
+        <valueSetReference>
+          <reference value="http://hl7.org.au/fhir/argonaut/ValueSet/medication-codes"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="MedicationRequest.medication[x]"/>
+      </mapping>
+    </element>
+    <element id="MedicationRequest.subject">
+      <path value="MedicationRequest.subject"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org.au/fhir/argonaut/StructureDefinition/argo-patient"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="MedicationRequest.subject"/>
+      </mapping>
+    </element>
+    <element id="MedicationRequest.authoredOn">
+      <path value="MedicationRequest.authoredOn"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="MedicationRequest.authoredOn"/>
+      </mapping>
+    </element>
+    <element id="MedicationRequest.requester">
+      <path value="MedicationRequest.requester"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="us-core-stu3"/>
+        <map value="MedicationRequest.requester.agent"/>
+      </mapping>
+    </element>
+    <element id="MedicationRequest.requester.agent">
+      <path value="MedicationRequest.requester.agent"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+  </differential>
+</StructureDefinition>
