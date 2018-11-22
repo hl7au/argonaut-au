@@ -560,7 +560,7 @@
 	<resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/argo-medicationrequest"/>
+        <reference value="StructureDefinition/argo-medication"/>
       </sourceReference>
     </resource>
 	</package>
