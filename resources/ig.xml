@@ -471,7 +471,7 @@
         <reference value="ValueSet/observation-value-codes"/>
       </sourceReference>
     </resource>
-	    <resource>
+	<resource>
       <sourceReference>
         <reference value="ValueSet/ucum-vitals-common"/>
       </sourceReference>
