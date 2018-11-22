@@ -443,16 +443,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="ValueSet/substance-rxnorm"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="ValueSet/substance-ndfrt"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="ValueSet/provider-role"/>
       </sourceReference>
     </resource>
@@ -484,11 +474,6 @@
     <resource>
       <sourceReference>
         <reference value="ValueSet/observation-ccdasmokingstatus"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="ValueSet/ndc-vaccine-codes"/>
       </sourceReference>
     </resource>
     <resource>
