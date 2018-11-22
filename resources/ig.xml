@@ -471,6 +471,11 @@
         <reference value="ValueSet/observation-value-codes"/>
       </sourceReference>
     </resource>
+	<resource>
+      <sourceReference>
+        <reference value="ValueSet/observation-ccdavitalsignresult"/>
+      </sourceReference>
+    </resource>
     <resource>
       <sourceReference>
         <reference value="ValueSet/observation-ccdasmokingstatus"/>
