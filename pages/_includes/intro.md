@@ -26,10 +26,10 @@ Note, the Common MU Data Set referenced in the Use Cases is now the ONC 2015 Com
 
 -----------------------------------------------
 
-Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For details, see [SMART on FHIR Authorization Guide] and the [Argonaut Sprint Definitions].
+Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For details, see [SMART Application Launch Framework Implementation Guide] and the [Useful Argonaut Links].
 
-  [SMART on FHIR Authorization Guide]: http://fhir-docs.smarthealthit.org/argonaut-dev/authorization/
-  [Argonaut Sprint Definitions]: https://github.com/argonautproject/implementation-program/wiki
+  [SMART Application Launch Framework Implementation Guide] :  http://hl7.org/fhir/smart-app-launch
+  [Useful Argonaut Links] : http://www.fhir.org/AU/Argonaut-Links
 
 #### Data Element Query
 
