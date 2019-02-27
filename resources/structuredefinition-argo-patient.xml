@@ -66,26 +66,10 @@
         <map value="Patient" />
       </mapping>
     </element>
-    <element id="Patient.extension:birthPlace">
-      <path value="Patient.extension" />
-      <sliceName value="birthPlace" />
-    </element>
-    <element id="Patient.extension:birthPlace.valueAddress:valueAddress">
-      <path value="Patient.extension.valueAddress" />
-      <sliceName value="valueAddress" />
-    </element>
     <element id="Patient.extension:indigenousStatus">
       <path value="Patient.extension" />
       <sliceName value="indigenousStatus" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.extension:mothersMaidenName">
-      <path value="Patient.extension" />
-      <sliceName value="mothersMaidenName" />
-    </element>
-    <element id="Patient.extension:mothersMaidenName.valueString:valueString">
-      <path value="Patient.extension.valueString" />
-      <sliceName value="valueString" />
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
