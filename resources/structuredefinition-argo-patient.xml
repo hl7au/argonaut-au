@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="argo-patient" />
   <text>
@@ -54,6 +54,9 @@
   <derivation value="constraint" />
   <differential>
     <element id="Patient">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="trial-use" />
+      </extension>
       <path value="Patient" />
       <short value="Argonaut Patient Profile" />
       <mustSupport value="false" />
@@ -63,10 +66,26 @@
         <map value="Patient" />
       </mapping>
     </element>
+    <element id="Patient.extension:birthPlace">
+      <path value="Patient.extension" />
+      <sliceName value="birthPlace" />
+    </element>
+    <element id="Patient.extension:birthPlace.valueAddress:valueAddress">
+      <path value="Patient.extension.valueAddress" />
+      <sliceName value="valueAddress" />
+    </element>
     <element id="Patient.extension:indigenousStatus">
       <path value="Patient.extension" />
       <sliceName value="indigenousStatus" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.extension:mothersMaidenName">
+      <path value="Patient.extension" />
+      <sliceName value="mothersMaidenName" />
+    </element>
+    <element id="Patient.extension:mothersMaidenName.valueString:valueString">
+      <path value="Patient.extension.valueString" />
+      <sliceName value="valueString" />
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
@@ -77,6 +96,17 @@
         <identity value="us-core-stu3" />
         <map value="Patient.identifier" />
       </mapping>
+    </element>
+    <element id="Patient.identifier.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier.value">
+      <path value="Patient.identifier.value" />
+      <short value="The value that is unique within the system." />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
@@ -126,6 +156,14 @@
         <identity value="us-core-stu3" />
         <map value="Patient.birthDate" />
       </mapping>
+    </element>
+    <element id="Patient.birthDate.extension:birthTime">
+      <path value="Patient.birthDate.extension" />
+      <sliceName value="birthTime" />
+    </element>
+    <element id="Patient.birthDate.extension:birthTime.valueDateTime:valueDateTime">
+      <path value="Patient.birthDate.extension.valueDateTime" />
+      <sliceName value="valueDateTime" />
     </element>
     <element id="Patient.animal">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
